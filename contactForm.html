@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+           /* border: 1px solid black;*/
+            box-shadow: 5px 10px 5px gray;
+            max-width: 600px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        
+        }
+        @media screen  and (min-width: 701px){
+            .msg,.contact{
+                flex: 1 1 50%;
+            }
+            
+        }
+
+        @media screen and (max-width:700px) {
+            .msg,.contact{
+                flex-grow: 1;
+            }
+            
+        }
+        .msg{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .contact{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        input, textarea{
+            display: block;
+            width: 100%;
+        }
+        input{
+            height: 2rem;
+        }
+        button{
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="msg">
+            <label for="msg">Üzenet</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="contact">
+            <label for="">Név:</label>
+            <input type="text" name="" id="nev">
+            <label for="">Email:</label>
+            <input type="email" name="" id="email">
+            <button type="submit">Küldés</button>
+        </div>
+    </form>
+</body>
+</html>

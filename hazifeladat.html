@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Házi feladat</title>
+    <style>
+        header{
+            height: 70px;
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            position: sticky;
+            top: 0;
+        }
+        .tartalom{
+            display: flex;
+        }
+        nav{
+            background-color: orange;
+            flex-grow: 1;
+            display: block;
+        }
+        main{
+            height: 600px;
+            background-color: red;
+            flex-grow: 3;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        aside{
+            background-color: purple;
+            flex-grow: 1;
+        }
+        footer{
+            height: 70px;
+            background-color: black;
+            position: sticky;
+            bottom: 0;
+        }
+        body{
+            max-width: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <div class="tartalom">
+        <nav>...navigáció</nav>
+        <main>...tartalom</main>
+        <aside>...oldalsáv</aside>
+    </div>
+    <footer>...lábléc</footer>
+</body>
+</html>

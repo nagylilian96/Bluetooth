@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipikus</title>
+    <style>
+        nav ul{
+            height: 50px;
+            background-color: purple;
+            display: flex;
+            list-style-type: none;
+            gap: 5px;
+            align-items: center;
+            padding-left: 5px;
+            margin: 0;
+        }
+        nav a{
+            display: block;
+            width: 80px;
+            height: 30px;
+            background-color: lightblue;
+        }
+        .tartalom{
+            height: 100vw;
+            display: flex;
+        }
+        main {
+            background-color: yellow;
+            flex-grow: 3;
+        }
+        aside{
+            background-color: lightblue;
+            flex-grow: 1;
+        }
+        nav{
+            position:sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </nav>
+    <div class="tartalom">
+        <main>...tartalom</main>
+        <aside>...oldalsáv</aside>
+    </div>
+</body>
+</html>

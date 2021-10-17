@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap elemek</title>
+    <style>
+        form{
+            max-width: 500px;
+            border:1px solid blue;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>Személyes adatok</legend>
+
+            <label for="nev">Név:</label>
+            <input type="text" name="nev" id="nev" placeholder="írd be a neved" required><br>
+
+            <label for="pw">Jelszó:</label>
+            <input type= "password" name="pw" id="pw"><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" id="mail" required><br>
+
+            <label for="ev">Születési év:</label>
+            <input type="number" name="ev" id="ev" min="2000" max="2022"><br>
+
+            <label for="datum">Születési dátum:</label>
+            <input type="date" name="datum" id="datum">
+
+        </fieldset>
+        <p>Értékeld a terméket a 10-es skálán:</p>
+        <input type="range" name="pont" id="pont" min="0" max="10">
+        <fieldset>
+            <legend>Nyelvtudás, iskolai végzettség</legend>
+            <label for="nyelv">Nyelvtudás:       </label><br>
+                <input type="checkbox" name="nyelv" value="hu">magyar <br>
+                <input type="checkbox" name="nyelv" value="de">német <br>
+                <input type="checkbox" name="nyelv" value="en">angol <br>
+                <input type="checkbox" name="nyelv" value="mas">egyéb <br>
+            
+                <label for="">Legmagasabb iskolai végzettség:</label><br>
+                <input type="radio" name="edu" value="alapfoku">alapfokú <br>
+                <input type="radio" name="edu" value="kozep">középfokú <br>
+                <input type="radio" name="edu" value="felso">felsőfokú <br>
+
+                <br><br>
+                <label for="op">Válassz ki egy ágazatot:</label><br>
+                <select name="op" id="op">
+                    <option value="0">válassz ki egyet...</option>
+                    <option value="web">Webfejlesztő</option>
+                    <option value="szoft">Szoftverfejlesztő</option>
+                    <option value="rend">Rendszergazda</option>
+                    <option value="teszt">Tesztelő</option>
+                </select>
+                <br><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="indokold meg a választásodat..."></textarea><br>
+
+                <input type="submit" value="Küldés">
+
+        
+        </fieldset>
+    </form>
+</body>
+</html>
